@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			var grade = [80, 77, 88, 95, 68];
+			var theAverage = 0;
+			var getGrades = 0;
+			//Step 1 Add up all grades and divide by the number of values
+			//Step 2 Find the letter grade for the student's average
+			for(var i=0; i < grade.length; i++ ){
+				getGrades += grade[i];
+			}
+			//Created 2 empty containers
+			//Made a for loop to cycle through the array until it filled the getGrades container with all the values of grade
+
+			theAverage = getGrades/grade.length;
+			var letterGrade = "";
+
+			if(theAverage < 60){
+				letterGrade = "F";
+			}else if(theAverage <= 70){
+				letterGrade = "D";
+			}else if(theAverage <= 80){
+				letterGrade = "C";
+			}else if(theAverage <= 90){
+				letterGrade = "B";
+			}else if(theAverage <= 100){
+				letterGrade = "A";
+			}
+			console.log(letterGrade);
+		</script>
+	</body>
+</html>

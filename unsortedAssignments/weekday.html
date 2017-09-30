@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="date"></h1>
+
+
+		<script type="text/javascript">
+			var day;
+            //Create an empty container(variable) labeled day
+            //getDay() method returns weekday as a number
+            //Whetever number the method returns determines the case to be executed
+            
+			switch (new Date().getDay()) {
+    			case 0:
+        				day = "Sunday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Sunday'
+        				break;
+    			case 1:
+        				day = "Monday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Monday'
+        				break;
+    			case 2:
+        				day = "Tuesday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Tuesday'
+        				break;
+    			case 3:
+        				day = "Wednesday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Wednesday'
+						break;
+    			case 4:
+        				day = "Thursday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Thursday'
+        				break;
+    			case 5:
+        				day = "Friday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Friday'
+        				break;
+    			case 6:
+        				day = "Saturday";
+        				document.getElementById('date').innerHTML = 'Welcome, its Saturday'
+        				break;
+			}
+
+			//document.getElementById("date").innerHTML = Date();
+
+		</script>
+	</body>
+</html>

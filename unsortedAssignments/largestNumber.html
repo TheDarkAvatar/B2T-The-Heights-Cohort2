@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			var x = parseInt(prompt('Enter number'));
+			var y = parseInt(prompt('Enter number'));
+			var z = parseInt(prompt('Enter number'));
+
+			/*var array = [0,0,0]
+			array[0] = prompt("Number 1");
+			array[1] = prompt("Number 2");
+			array[2] = prompt("Number 3");
+			*/
+
+			//Step 1 Ask if x is smaller than y and x is smaller than z; write x is smallest number; go to Step 2
+
+			//Step 2: Ask if y is smaller than x and y is smaller than z; write y is the smallest number; go to Step 3
+
+			//Step 3: Ask if z is smaller than x and z is smaller than y; write z is the smallest number
+			
+			if(x > y && x > z){
+				console.log(x + ' is the largest');
+			}else if (y > z) {
+				console.log(y + ' is the largest');
+			}else{
+				console.log(z + ' is the largest');
+			}
+
+			/*
+			var theLargest = Math.max(array);
+			console.log(theLargest + " is the largest");
+			*/
+		</script>
+	</body>
+</html>
