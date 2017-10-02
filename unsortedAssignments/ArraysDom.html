@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="text"></h1>
+		<script type="text/javascript">
+
+			// Creates prompt for array
+			var input = prompt("Add more fruit");
+
+			//Setting variables for fruits
+			var fruits = ["apple", "orange", "kiwi"];
+			fruits.push(input)
+			fruits.sort()
+			console.log(fruits)
+			document.getElementById('text').innerHTML = fruits.join( ' with ')
+
+		</script>
+	</body>
+</html>
