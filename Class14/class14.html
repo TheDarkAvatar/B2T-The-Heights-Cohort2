@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="display"></h1>
+		<img id="photo" src="">
+
+		<script type="text/javascript">
+			/*
+			var colors = ['red', 'black', 'green'];
+			colors[1]//returns black
+
+			console.log(colors, length)
+			//push adds an element to the end of an array
+			colors.push(purple);
+			//adds to the beginning of an array
+			colors.unshift('gold');
+			//remove from the end of an array
+			colors.pop();
+			//remove from the beginning of an array
+			colors.shift();
+
+			var nums = [100, 200, 300, 400, 500, 600];
+			nums.slice(0, 5);
+			//returns [200, 300, 400, 500]
+			*/
+
+			var age = parseInt(prompt('Enter age'));
+			if(age >= 18){
+				console.log('YOU ARE AN ADULT');
+				//setting element text
+				document.getElementById('display').innerHTML = 'You are an adult!'
+				//setting src of img
+				document.getElementById('photo').src = 'https://www.evolllution.com/wp-content/uploads/2014/03/Prospective-adult-student-Rido.jpg';
+			}
+			else if (age >= 13 && age <= 17) {
+				console.log('You are a teen')
+				document.getElementById('display').innerHTML = 'You are a teenage mutant ninja turtle';
+				document.getElementById('photo').src = 'http://www.monogramdirect.com/media/catalog/category/TMNT_Logo.png';
+			}
+			else if (age >= 10 && age <= 12) {
+				console.log('You are a preteen');
+			}
+			else {
+				console.log('You are a baby');
+			}
+
+			}
+
+		</script>
+	</body>
+</html>
